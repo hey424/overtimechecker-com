@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = 'Overtime Pay Calculator — Calculate Your Overtime Earnings | overtimechecker.com';
+const description = 'Free overtime pay calculator. Estimate time-and-a-half and double-time earnings under federal FLSA and state-specific overtime laws. Plain-English worker rights guides.';
+---
+<BaseLayout title={title} description={description}>
+  <h1>Overtime Pay Calculator</h1>
+  <p>Calculate the overtime pay you're owed under federal FLSA rules and your state's specific overtime laws. Enter your hourly rate and hours worked; we'll show federal time-and-a-half, any state-specific premium rates, and a total estimate.</p>
+
+  <section aria-labelledby="calc-heading">
+    <h2 id="calc-heading">Calculate your overtime</h2>
+    <noscript>
+      <p><strong>Note:</strong> the interactive calculator requires JavaScript. Manual calculation: <code>Overtime pay = (Hours over 40) &times; (Hourly rate &times; 1.5)</code> under federal FLSA.</p>
+    </noscript>
+    <div id="calculator-island">
+      <form class="calc-form" data-pilot-placeholder>
+        <label>Hourly rate (USD) <input type="number" min="0" step="0.01" placeholder="20.00" /></label>
+        <label>Regular hours worked this week <input type="number" min="0" step="0.5" placeholder="40" /></label>
+        <label>Overtime hours worked this week <input type="number" min="0" step="0.5" placeholder="10" /></label>
+        <label>State (for state-specific premium rates) <input type="text" placeholder="California" /></label>
+        <button type="button">Calculate (interactive version loads with JS)</button>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <h2>How overtime pay works under federal law</h2>
+    <p>The federal Fair Labor Standards Act (FLSA) requires most employers to pay non-exempt employees at least 1.5 times their regular rate for hours worked over 40 in a workweek. This is "time and a half."</p>
+    <p>The calculation: <code>Overtime pay = (Hours over 40) &times; (Hourly rate &times; 1.5)</code></p>
+    <p>Example: at $20/hour with 50 hours worked, federal overtime = 10 hours &times; $30/hour = $300 above your regular weekly pay.</p>
+    <p>See our <a href="/methodology">methodology</a> for the full FLSA rules and exemptions.</p>
+  </section>
+
+  <section>
+    <h2>State overtime rules can be stricter</h2>
+    <p>Several states require overtime in situations the FLSA doesn't:</p>
+    <ul>
+      <li><strong>California:</strong> Time-and-a-half after 8 hours/day OR 40 hours/week. Double-time after 12 hours/day or 8 hours on the 7th consecutive day.</li>
+      <li><strong>Alaska:</strong> Time-and-a-half after 8 hours/day.</li>
+      <li><strong>Nevada:</strong> Time-and-a-half after 8 hours/day if your hourly rate is below 1.5x the state minimum wage.</li>
+      <li><strong>Colorado:</strong> Time-and-a-half after 12 hours/day or 40 hours/week.</li>
+    </ul>
+    <p>See <a href="/state-laws">State Laws</a> for the full state-by-state breakdown.</p>
+  </section>
+
+  <section>
+    <h2>Who is entitled to overtime?</h2>
+    <p>Most hourly employees in the US are entitled to overtime under federal law. Common exemptions include:</p>
+    <ul>
+      <li><strong>Executive, administrative, and professional employees</strong> paid a salary above the federal threshold and meeting the duties test.</li>
+      <li><strong>Outside sales employees.</strong></li>
+      <li><strong>Certain computer professionals.</strong></li>
+      <li><strong>Independent contractors</strong> (but be careful &mdash; misclassification is common).</li>
+    </ul>
+    <p>If you're salaried, that doesn't automatically mean you're exempt. The exemption requires both a salary <em>and</em> a duties test. See <a href="/know-your-rights">Know Your Rights</a> for details.</p>
+  </section>
+
+  <section>
+    <h2>Recent guides</h2>
+    <ul>
+      <li><a href="/guides/how-overtime-is-calculated">How overtime is calculated</a></li>
+      <li><a href="/guides/state-overtime-laws-explained">State overtime laws explained</a></li>
+      <li><a href="/guides/what-to-do-if-your-employer-wont-pay-overtime">What to do if your employer won't pay overtime</a></li>
+      <li><a href="/guides/common-overtime-misconceptions">Common overtime misconceptions</a></li>
+    </ul>
+  </section>
+
+  <style>
+    .calc-form { display:grid;gap:0.75rem;max-width:480px;margin:1rem 0; }
+    .calc-form label { display:grid;gap:0.25rem;font-size:0.95rem; }
+    .calc-form input { padding:0.5rem;font-size:1rem;border:1px solid var(--color-border);border-radius:4px; }
+    .calc-form button { padding:0.6rem 1rem;background:var(--color-accent);color:white;border:none;border-radius:4px;cursor:pointer;font-size:1rem; }
+  </style>
+</BaseLayout>

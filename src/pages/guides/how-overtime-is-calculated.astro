@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const title = 'How Overtime Is Calculated | overtimechecker.com';
+const description = 'Step-by-step on calculating overtime pay: regular rate, premium rate, weekly vs. daily overtime, and worked examples.';
+---
+<BaseLayout title={title} description={description}>
+  <h1>How Overtime Is Calculated</h1>
+  <p>Overtime calculations seem simple but get complicated when you have variable pay, multiple jobs, or work in a state with daily overtime rules. Here's the step-by-step.</p>
+
+  <h2>Step 1: Determine your regular rate</h2>
+  <p>For hourly workers without supplemental pay, your regular rate is just your hourly wage. If you receive non-discretionary bonuses, commissions, or shift differentials, you add those to your weekly straight-time pay and divide by hours worked.</p>
+  <p><strong>Example:</strong> $20/hour, 50 hours, $100 non-discretionary bonus. Regular rate = ($1,000 + $100) / 50 = $22/hour.</p>
+
+  <h2>Step 2: Calculate overtime pay</h2>
+  <p>Federal: Time-and-a-half for hours over 40 in a workweek.</p>
+  <p><code>Overtime pay = (Hours over 40) &times; (Regular rate &times; 1.5)</code></p>
+  <p>Continuing the example: 10 overtime hours &times; $33/hour ($22 &times; 1.5) = $330 overtime pay.</p>
+
+  <h2>Step 3: Apply state rules if applicable</h2>
+  <p>In California, Alaska, Nevada, or Colorado, daily overtime may yield more than the federal calculation. Calculate both and use the higher result.</p>
+
+  <h2>Step 4: Check for double-time triggers</h2>
+  <p>California requires double-time after 12 hours in a day, or after 8 hours on the 7th consecutive day. A few union contracts and industry-specific rules also include double-time.</p>
+
+  <h2>Multiple jobs with the same employer</h2>
+  <p>If you work two roles for the same employer, hours combine for overtime purposes. The weighted-average regular rate is used unless an explicit dual-rate agreement exists.</p>
+
+  <h2>Tipped employees</h2>
+  <p>Special rules apply. Overtime is calculated on the FULL minimum wage, not the reduced cash wage paid to tipped employees. This is one of the most commonly miscalculated overtime scenarios.</p>
+
+  <p>For state-specific rules see <a href="/guides/state-overtime-laws-explained">State overtime laws explained</a>.</p>
+</BaseLayout>

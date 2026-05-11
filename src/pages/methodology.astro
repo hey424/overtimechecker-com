@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = 'Methodology — How We Calculate Overtime | overtimechecker.com';
+const description = 'The federal FLSA rules and state-specific overtime formulas our calculator uses, with citations.';
+---
+<BaseLayout title={title} description={description}>
+  <h1>Methodology</h1>
+  <p>Our calculator follows the Fair Labor Standards Act (FLSA) of 1938 (29 USC &sect; 207) and state-specific overtime laws where applicable.</p>
+
+  <h2>Federal FLSA formula</h2>
+  <p><code>Overtime pay = (Hours worked over 40 in a workweek) &times; (Regular rate &times; 1.5)</code></p>
+  <p>Authority: 29 USC &sect; 207(a)(1).</p>
+
+  <h2>Regular rate calculation</h2>
+  <p>The "regular rate" includes hourly wage plus most non-discretionary payments (commissions, non-discretionary bonuses, shift differentials). It excludes overtime premiums, discretionary bonuses, and gifts.</p>
+  <p>For hourly workers without supplemental pay: regular rate = hourly wage.</p>
+  <p>For workers with commissions or bonuses: regular rate = total weekly straight-time pay / total hours worked.</p>
+
+  <h2>State variations</h2>
+  <p>Where state law requires more than the federal minimum (California, Alaska, Nevada, Colorado), our calculator applies the state-specific premium when you select that state. See <a href="/state-laws">State Laws</a> for details.</p>
+
+  <h2>Workweek definition</h2>
+  <p>A "workweek" is a fixed, recurring period of 168 hours (7 consecutive 24-hour periods). It does NOT have to be Sunday-Saturday. Your employer sets the workweek; once set, it generally can't change to avoid overtime.</p>
+
+  <h2>Exemptions we don't model</h2>
+  <p>The calculator assumes you're non-exempt. If you're a bona fide executive, administrative, professional, outside sales, or computer-professional employee (meeting both the salary and duties tests), federal FLSA overtime doesn't apply &mdash; though some states have narrower exemptions.</p>
+
+  <h2>What we don't model</h2>
+  <p>Tip credits, piece-rate calculations, fluctuating workweek method, alternative workweek schedules (some California industries), and union-contracted overtime. These require case-by-case calculation.</p>
+</BaseLayout>

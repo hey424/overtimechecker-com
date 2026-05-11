@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = 'Overtime Laws by State | overtimechecker.com';
+const description = 'State-by-state overtime pay laws. Find your state\'s specific overtime rules, daily overtime requirements, and double-time premiums.';
+---
+<BaseLayout title={title} description={description}>
+  <h1>Overtime Laws by State</h1>
+  <p>The federal FLSA sets a baseline: time-and-a-half after 40 hours/week. Several states require more. This page covers the states with notable departures from the federal default.</p>
+
+  <h2>States with daily overtime rules</h2>
+
+  <h3>California</h3>
+  <ul>
+    <li>Time-and-a-half after 8 hours in a workday</li>
+    <li>Time-and-a-half after 40 hours in a workweek (federal default)</li>
+    <li>Double-time after 12 hours in a workday</li>
+    <li>Double-time after 8 hours on the 7th consecutive day worked</li>
+    <li>Time-and-a-half for the first 8 hours on the 7th consecutive day</li>
+  </ul>
+
+  <h3>Alaska</h3>
+  <p>Time-and-a-half after 8 hours in a workday OR 40 hours in a workweek (whichever is greater).</p>
+
+  <h3>Nevada</h3>
+  <p>Time-and-a-half after 8 hours/day if you earn less than 1.5x the state minimum wage; after 40 hours/week otherwise.</p>
+
+  <h3>Colorado</h3>
+  <p>Time-and-a-half after 12 hours in a workday, 12 consecutive hours, or 40 hours in a workweek (whichever results in higher pay).</p>
+
+  <h2>States that follow federal default</h2>
+  <p>The majority of states match the federal FLSA: time-and-a-half after 40 hours per workweek with no daily overtime rule. This includes Texas, Florida, New York (for most workers), Illinois, Ohio, and most others.</p>
+
+  <h2>States with specific exemptions or unusual rules</h2>
+  <p>A few states have special rules for specific industries (agriculture, healthcare) or specific employee types. Always check your state's Department of Labor website for current rules in your situation.</p>
+
+  <p>For practical advice, see <a href="/know-your-rights">Know Your Rights</a> and our guide on <a href="/guides/state-overtime-laws-explained">state overtime laws explained</a>.</p>
+</BaseLayout>
