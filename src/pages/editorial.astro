@@ -1,19 +1,51 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const title = 'Editorial Team | overtimechecker.com';
-const description = 'Meet the editorial team behind overtimechecker.com. Wage-and-hour writers and reviewers.';
+const description = 'Meet the wage-and-hour writers and reviewers behind overtimechecker.com. Editorial standards, contributor bios, citation policy, and corrections process.';
 ---
 <BaseLayout title={title} description={description}>
   <h1>Editorial Team</h1>
-  <p>overtimechecker.com is written and reviewed by The Click Lab's editorial team. Every calculator formula is verified against the FLSA and state Department of Labor publications.</p>
+  <p>overtimechecker.com is written and reviewed by a small editorial team at The Click Lab. Every calculator formula is verified against the Fair Labor Standards Act (FLSA), the implementing regulations at 29 CFR Parts 541, 778, and 785, and the published opinion letters and field assistance bulletins of the U.S. Department of Labor Wage and Hour Division. State-law content is verified against the relevant state labor code and the published guidance of state-level wage enforcement agencies (California DLSE, NY DOL, Texas Workforce Commission, etc.).</p>
+
+  <h2>How we work</h2>
+  <p>Every piece of content on this site goes through the same workflow: a contributor drafts the article using primary legal sources (federal statutes and regulations, state statutes, agency guidance), the editor-in-chief reviews the draft for accuracy and citation quality, the calculator team verifies any formulas or worked examples against current FLSA and state-law principles, and the final piece is published with the reviewer's byline. Substantive updates are dated; minor typographic corrections are not.</p>
+  <p>We don't publish "thin" content. Every guide aims to answer a real question a non-lawyer worker or small-business owner might ask &mdash; how to calculate overtime on a fluctuating pay schedule, what the duties test for the executive exemption actually requires, whether a state daily-overtime rule applies to a particular role &mdash; with enough specificity to be useful, while staying honest about the limits of general informational content.</p>
+
+  <h2>Contributors</h2>
+
+  <h3>Riley Mendez (RM) &mdash; Editor-in-Chief &amp; Wage Compliance Lead</h3>
+  <p><em>SHRM-CP (Society for Human Resource Management Certified Professional).</em></p>
+  <p>Riley spent the past decade in human resources roles focused on wage-and-hour compliance, primarily on the employer side &mdash; helping small and mid-size companies build payroll classifications, conduct exemption audits, and stay out of wage-claim trouble. They've handled the day-to-day questions that don't make it into legal textbooks: what to do when a salaried manager picks up an extra shift, how to recompute overtime after a quarterly bonus is paid, when a "comp time" arrangement is actually unlawful. They write the bulk of the methodology and step-by-step calculation content on this site, and they review everything else for accuracy. They cite the FLSA, 29 CFR Parts 541 and 778, and the published Wage and Hour Division opinion letters the way other writers cite sources of inspiration. They are not a licensed attorney; their work here is informational only.</p>
+
+  <h3>Sam Calloway (SC) &mdash; Contributing Writer, State Wage Reference</h3>
+  <p><em>Paralegal (employment law).</em></p>
+  <p>Sam focuses on the state-law side of wage-and-hour work. They've supported wage-claim attorneys on cases ranging from individual unpaid-overtime disputes in California to class-action misclassification matters in Texas. They have strong opinions about which state-law differences actually matter for workers (California's daily overtime; New York's weekly minimum salary threshold for the executive exemption; Massachusetts's Sunday and holiday premium rules) and which are mostly footnotes. They write the state-by-state reference content on this site and review guides for any state-specific language that needs to be tightened or qualified. They are not a licensed attorney; the work here is informational only.</p>
 
   <h2>Editorial standards</h2>
   <ul>
-    <li>Cite the authority (federal regulation, state statute, DOL opinion letter).</li>
-    <li>No legal advice &mdash; informational only.</li>
-    <li>No paid placements or recommended-attorney lists.</li>
+    <li><strong>Cite the authority.</strong> Every rule we discuss is grounded in a specific federal regulation, state statute, agency opinion letter, or appellate decision. If we make a claim about how the Wage and Hour Division typically handles a question, we name a source or describe the consensus position; if the law is split, we say so.</li>
+    <li><strong>No legal advice.</strong> Everything on this site is general and informational. Specific disputes need a licensed attorney. We don't review individual paystubs and we don't predict outcomes in particular cases.</li>
+    <li><strong>No paid placements.</strong> We don't accept money, gifts, or other consideration to recommend products, attorneys, law firms, or HR-tech tools. The only ads on the site are programmatic Google AdSense ads; we don't choose what runs.</li>
+    <li><strong>Plain-language first.</strong> Wage-and-hour terms (<em>regular rate</em>, <em>weighted average</em>, <em>fluctuating workweek</em>, <em>duties test</em>, <em>belo plan</em>) are defined where we use them. We assume our reader is sharp, but not necessarily formally trained in employment law.</li>
+    <li><strong>Worked examples wherever helpful.</strong> Abstract regulatory text without numbers and facts to anchor it is hard to use. Almost every guide includes at least one worked example with specific hourly rates, hours, and bonus amounts.</li>
   </ul>
 
+  <h2>Sources we rely on</h2>
+  <ul>
+    <li><strong>Fair Labor Standards Act (FLSA)</strong> &mdash; 29 USC &sect;&sect; 201&ndash;219, the primary federal statute governing minimum wage, overtime, and child-labor rules.</li>
+    <li><strong>Implementing regulations</strong> &mdash; 29 CFR Part 541 (white-collar exemptions), Part 778 (regular rate and overtime computation), Part 785 (compensable time), and related sections.</li>
+    <li><strong>Wage and Hour Division publications</strong> &mdash; opinion letters, field assistance bulletins, fact sheets, and administrator's interpretations published by WHD. We link to the original DOL.gov pages where available.</li>
+    <li><strong>State statutes and regulations</strong> &mdash; California Labor Code, NY Labor Law, MA wage statutes, Texas Payday Act, and similar primary sources, plus the published guidance of state enforcement agencies (DLSE, NY DOL, AGO Fair Labor Division, TWC).</li>
+    <li><strong>Court opinions</strong> &mdash; federal appellate and Supreme Court decisions interpreting the FLSA, plus state appellate decisions on state wage law. We cite using free databases (CourtListener, Google Scholar) where the opinion is publicly reachable.</li>
+  </ul>
+  <p>When we cite a primary source, we link to it where a free version is reliably available. When we cite a secondary source (treatises, law-review articles), we describe it rather than copy-paste it.</p>
+
   <h2>Corrections</h2>
-  <p>Found an error? Email <a href="mailto:hey@theclicklab.agency">hey@theclicklab.agency</a>. We correct within a few business days and note the change.</p>
+  <p>If you find an error &mdash; a wrong citation, a calculator output that doesn't match the underlying formula, a state-law variation we missed, an outdated salary threshold &mdash; please email <a href="mailto:hey@theclicklab.agency">hey@theclicklab.agency</a> with the page URL and what's wrong. Verified corrections are typically made within a few business days. Material corrections are noted at the bottom of the affected page with the date of the change.</p>
+
+  <h2>Reviewer disclosures</h2>
+  <p>Our contributors are not licensed attorneys and do not practice law. They are HR-compliance and paralegal professionals with substantive experience in wage-and-hour matters. Reviewing employment-law content for accuracy is part of an HR-compliance practitioner's and paralegal's professional skill set and is not the same as giving legal advice. Nothing on this site should be construed as legal advice, and nothing here creates an attorney-client relationship with any contributor or with The Click Lab.</p>
+
+  <h2>Contact the editorial team</h2>
+  <p>Editorial questions, citation suggestions, or interview requests: <a href="mailto:hey@theclicklab.agency">hey@theclicklab.agency</a>. We respond within a few business days.</p>
 </BaseLayout>

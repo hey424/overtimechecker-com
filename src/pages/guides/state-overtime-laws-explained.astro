@@ -1,35 +1,82 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 const title = 'State Overtime Laws Explained | overtimechecker.com';
-const description = 'State-by-state overtime differences from federal law: daily overtime, double-time, and unusual exemptions.';
+const description = 'State-by-state overtime differences from federal FLSA: daily overtime, double-time, salary thresholds, and industry-specific rules.';
 ---
 <BaseLayout title={title} description={description}>
   <h1>State Overtime Laws Explained</h1>
-  <p>The federal FLSA sets a baseline that all employers must meet. States can require more &mdash; and many do. Here are the key state-by-state variations.</p>
+  <p><em>Reviewed by Sam Calloway (SC), Contributing Writer &mdash; State Wage Reference. Updated May 2026.</em></p>
+
+  <p>The federal Fair Labor Standards Act sets a baseline that every employer in the country must meet. States can require more &mdash; and many do. The result is that a worker in California or Massachusetts is often entitled to substantially more overtime pay than a worker doing identical work in Texas or Florida. This guide walks through the most important state-by-state variations, with enough specificity to tell whether you're affected.</p>
+  <p>State wage law changes annually. Salary thresholds for exemptions, the level of state minimum wage, and the scope of industry-specific rules update at the start of most calendar years. Always confirm the current threshold with your state's labor agency before relying on a number for an actual claim.</p>
+
+  <h2>How state and federal law interact</h2>
+  <p>Federal law sets the floor. States can require more (higher minimum wage, daily overtime, broader inclusion of bonuses in the regular rate, stricter exemption duties tests, etc.). When state and federal rules differ, employers must apply whichever rule gives the worker more. Workers in states that don't impose stricter rules fall back to the federal default: time-and-a-half over 40 hours in a workweek.</p>
+  <p>State rules also sometimes impose <em>narrower</em> protection in specific niches (for example, certain agricultural or domestic-service exemptions), so the "more protective" rule isn't always at the state level &mdash; but for overtime specifically, state law almost always either matches federal or exceeds it.</p>
 
   <h2>California (the strictest)</h2>
-  <p>California has the most worker-favorable overtime rules in the country:</p>
+  <p>California has the most worker-favorable overtime rules in the country, with multiple overlapping triggers:</p>
   <ul>
-    <li><strong>Daily overtime:</strong> Time-and-a-half after 8 hours in a workday</li>
-    <li><strong>Weekly overtime:</strong> Time-and-a-half after 40 hours in a workweek (federal default)</li>
-    <li><strong>Daily double-time:</strong> Double-time after 12 hours in a workday</li>
-    <li><strong>Seventh day rule:</strong> Time-and-a-half for the first 8 hours on the 7th consecutive day; double-time after 8 hours on that day</li>
+    <li><strong>Daily overtime:</strong> Time-and-a-half after 8 hours in a workday.</li>
+    <li><strong>Weekly overtime:</strong> Time-and-a-half after 40 hours in a workweek (matches federal default).</li>
+    <li><strong>Daily double-time:</strong> Double-time after 12 hours in a workday.</li>
+    <li><strong>Seventh-day rule:</strong> Time-and-a-half for the first 8 hours on the 7th consecutive day worked in a workweek; double-time after 8 hours on that day.</li>
+    <li><strong>Alternative workweek schedules:</strong> Employees may, via secret-ballot election, adopt an alternative workweek (commonly 4&times;10) that adjusts the daily overtime threshold. Strict procedural requirements apply.</li>
   </ul>
+  <p>California's exemption thresholds are also higher than federal. The state minimum salary for the executive, administrative, and professional exemptions is generally tied to two times the state minimum wage on a 40-hour-per-week basis, which exceeds the federal $684/week threshold. Specific industry wage orders (Wage Orders 1&ndash;17) layer on additional rules.</p>
 
   <h2>Alaska</h2>
-  <p>Time-and-a-half after 8 hours in a workday OR 40 hours in a workweek (whichever is higher).</p>
+  <p>Time-and-a-half after 8 hours in a workday OR 40 hours in a workweek (whichever yields the higher total). Alaska's daily threshold is the simplest of the daily-overtime states &mdash; no double-time tier, no seventh-day rule. Exemptions roughly track federal but with some industry-specific tweaks.</p>
 
   <h2>Nevada</h2>
-  <p>Time-and-a-half after 8 hours/day, but only for employees earning less than 1.5x the state minimum wage. Higher-wage workers fall back to federal weekly rules.</p>
+  <p>Time-and-a-half after 8 hours per day, but only for employees earning less than 1.5x the state minimum wage. Higher-wage workers fall back to the federal weekly rules. The wage threshold for daily overtime entitlement adjusts when the state minimum wage changes, so the precise cutoff moves annually.</p>
 
   <h2>Colorado</h2>
-  <p>Time-and-a-half after 12 consecutive hours in a workday, OR after 40 hours in a workweek (whichever gives more).</p>
+  <p>Time-and-a-half after 12 consecutive hours in a workday, OR after 40 hours in a workweek (whichever gives more). Colorado's daily threshold is unusually high (12 hours), so the rule mainly catches very long shifts that don't push weekly totals above 40 because of compressed schedules.</p>
+
+  <h2>Oregon</h2>
+  <p>Federal weekly default applies for most workers, but Oregon has unusually strict rules for the manufacturing sector: time-and-a-half after 10 hours per day, with maximum-hour limits. Healthcare workers have a separate set of rules.</p>
+
+  <h2>Massachusetts</h2>
+  <p>Federal weekly default for overtime. The notable state-level addition is the Sunday and holiday premium pay rule for certain retail employees, which historically required 1.5x for retail work on Sundays. This rule has been progressively phased out under the Massachusetts Grand Bargain (rates dropping each year toward 1.0x), so check the current year's rate. Massachusetts also has stricter rules around meal breaks and "blue laws" that affect when retail employees can be required to work.</p>
+
+  <h2>New York</h2>
+  <p>Federal weekly default for overtime hours, but New York's exemption salary thresholds are much higher than federal &mdash; especially in NYC and downstate counties. The threshold for the executive and administrative exemptions in NYC is well above the federal $684/week and is scheduled to rise. Workers who would be exempt under federal rules may be non-exempt under New York rules due to the salary threshold.</p>
+  <p>New York also has specific "spread of hours" rules requiring an extra hour of pay at minimum wage when the spread of working hours in a day exceeds 10, regardless of how those hours are distributed.</p>
+
+  <h2>Washington</h2>
+  <p>Federal weekly default for hours, but Washington has higher minimum salary thresholds for the white-collar exemptions, indexed to a multiple of the state minimum wage. Like New York, this means workers can be non-exempt under Washington law while being exempt under federal.</p>
 
   <h2>States with industry-specific rules</h2>
-  <p>Several states have special overtime rules for specific industries: agriculture (often exempt), healthcare (with alternative workweek schedules), and certain hospitality categories.</p>
+  <p>Several states have special overtime rules for specific industries:</p>
+  <ul>
+    <li><strong>Agriculture:</strong> Many states partially or fully exempt agricultural workers from overtime, mirroring federal. Some states have moved to phase out the agricultural exemption (California, Washington, New York) on staggered schedules.</li>
+    <li><strong>Healthcare:</strong> Many states allow "8/80" alternative workweeks for hospital and residential healthcare employees &mdash; overtime kicks in after 8 hours in a workday or 80 hours in a 14-day period.</li>
+    <li><strong>Hospitality:</strong> Specific rules for tipped employees, room-and-board allowances, and "live-in" employees in hospitality contexts.</li>
+    <li><strong>Transportation:</strong> Federal Motor Carrier Act exemptions overlap with state rules; truck drivers often fall under federal motor-carrier overtime rules rather than FLSA.</li>
+  </ul>
 
   <h2>States with no daily overtime</h2>
-  <p>Most states &mdash; including Texas, Florida, New York (for most workers), Illinois, Ohio, Pennsylvania, Georgia, and many others &mdash; follow the federal default: time-and-a-half after 40 hours/week with no daily threshold.</p>
+  <p>Most states &mdash; including Texas, Florida, Illinois, Ohio, Pennsylvania, Georgia, North Carolina, Virginia, Arizona, and many others &mdash; follow the federal default for overtime: time-and-a-half after 40 hours/week with no daily threshold. Workers in those states get overtime under the federal FLSA rules and the calculator's default settings apply.</p>
 
-  <p>For practical advice, see <a href="/know-your-rights">Know Your Rights</a>.</p>
+  <h2>State enforcement agencies</h2>
+  <p>If your state has stricter rules, you typically have a choice of filing a wage claim with the state agency or with the federal Department of Labor Wage and Hour Division. Some workers file with both. Key state agencies:</p>
+  <ul>
+    <li>California &mdash; Division of Labor Standards Enforcement (DLSE)</li>
+    <li>New York &mdash; New York State Department of Labor</li>
+    <li>Massachusetts &mdash; Office of the Attorney General, Fair Labor Division</li>
+    <li>Texas &mdash; Texas Workforce Commission</li>
+    <li>Washington &mdash; Department of Labor and Industries</li>
+    <li>Illinois &mdash; Illinois Department of Labor</li>
+  </ul>
+  <p>State agency processes are generally free for workers and don't require an attorney. Filing limits and recovery caps vary; some state agencies cap claims at amounts below the federal limit, so if your claim is large you may prefer to file federally or pursue private litigation.</p>
+
+  <h2>How to determine which state's law applies to your work</h2>
+  <p>Generally, the law of the state where the work is performed governs &mdash; not the state where the company is headquartered or where you live. A remote worker performing all work in Texas for a California-based company is typically subject to Texas wage law for the work performed in Texas.</p>
+  <p>The analysis gets more complex for multi-state workers, traveling workers, and those who perform work in several states each month. In ambiguous cases, the state with the strongest connection to the work (where the worker is physically present most often, where they're hired from, where the work product is consumed) typically controls.</p>
+
+  <h2>Practical implications</h2>
+  <p>If you're in a state with daily overtime rules, our calculator's defaults won't capture the full amount you're owed unless you switch the calculation mode to daily-overtime. Always compute both federal-weekly and state-daily totals and use the higher.</p>
+  <p>If you're an employer with workers in multiple states, the practical rule is to apply each state's specific rule to each worker, not to apply a single nationwide rule that satisfies the strictest state. This means payroll systems need state-by-state configuration.</p>
+  <p>For practical advice on what to do if you discover unpaid overtime, see <a href="/guides/what-to-do-if-your-employer-wont-pay-overtime">What to do if your employer won't pay overtime</a>. For the broader regulatory framework, see <a href="/methodology">Methodology</a>.</p>
 </BaseLayout>

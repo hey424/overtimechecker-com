@@ -1,32 +1,105 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 const title = 'How Overtime Is Calculated | overtimechecker.com';
-const description = 'Step-by-step on calculating overtime pay: regular rate, premium rate, weekly vs. daily overtime, and worked examples.';
+const description = 'A step-by-step guide to calculating overtime pay under the FLSA: regular rate, premium rate, fluctuating workweek, bonus inclusion, and worked examples.';
 ---
 <BaseLayout title={title} description={description}>
   <h1>How Overtime Is Calculated</h1>
-  <p>Overtime calculations seem simple but get complicated when you have variable pay, multiple jobs, or work in a state with daily overtime rules. Here's the step-by-step.</p>
+  <p><em>Reviewed by Riley Mendez (RM), Editor-in-Chief &mdash; updated May 2026.</em></p>
+
+  <p>Overtime calculations seem simple but get complicated quickly when you have variable pay, multiple jobs, or work in a state with daily overtime rules. This guide walks through the framework step by step, with worked examples that cover the most common situations a non-lawyer worker or small-business owner runs into.</p>
+  <p>This is general informational content. Real wage-and-hour disputes depend on jurisdiction, classification, evidence, and procedural posture &mdash; talk to a licensed attorney or your state's wage enforcement agency before relying on any number for actual decisions.</p>
+
+  <h2>The framework in one paragraph</h2>
+  <p>Compute your regular rate (which may include bonuses and commissions, not just your hourly wage), multiply by 1.5 for federal overtime hours (over 40 in a workweek), apply any stricter state rule (daily overtime in California, Alaska, Nevada, Colorado), check for double-time triggers (California after 12 hours/day, or 8 hours on the 7th consecutive workday), and confirm you're not in an exempt classification that disqualifies overtime altogether.</p>
 
   <h2>Step 1: Determine your regular rate</h2>
-  <p>For hourly workers without supplemental pay, your regular rate is just your hourly wage. If you receive non-discretionary bonuses, commissions, or shift differentials, you add those to your weekly straight-time pay and divide by hours worked.</p>
-  <p><strong>Example:</strong> $20/hour, 50 hours, $100 non-discretionary bonus. Regular rate = ($1,000 + $100) / 50 = $22/hour.</p>
+  <p>The regular rate is the cornerstone of every overtime calculation under FLSA &sect; 7(e), and getting it wrong is the single most common source of wage underpayment.</p>
+  <p>For hourly workers without supplemental pay, your regular rate is just your hourly wage. If you receive non-discretionary bonuses, commissions, or shift differentials, you must include those in the regular rate. The general formula:</p>
+  <p><code>Regular rate = (Total straight-time pay for the workweek including bonuses) &divide; (Total hours worked in the workweek)</code></p>
+  <p><strong>Worked example.</strong> $20/hour, 50 hours, $100 non-discretionary attendance bonus. Straight-time pay = $20 &times; 50 + $100 = $1,100. Regular rate = $1,100 / 50 = $22/hour. Even though your "wage" is $20, your overtime premium is computed off the $22 figure.</p>
 
-  <h2>Step 2: Calculate overtime pay</h2>
-  <p>Federal: Time-and-a-half for hours over 40 in a workweek.</p>
-  <p><code>Overtime pay = (Hours over 40) &times; (Regular rate &times; 1.5)</code></p>
-  <p>Continuing the example: 10 overtime hours &times; $33/hour ($22 &times; 1.5) = $330 overtime pay.</p>
+  <h2>Step 2: Identify what gets included in the regular rate</h2>
+  <p>Inclusions (must be added to regular rate before overtime is computed):</p>
+  <ul>
+    <li>Non-discretionary bonuses (any bonus promised or expected based on hours, production, or performance)</li>
+    <li>Commissions</li>
+    <li>Shift differentials</li>
+    <li>Longevity and attendance pay</li>
+    <li>Promised retention bonuses</li>
+    <li>The reasonable cost or fair value of board, lodging, or other facilities (with limits)</li>
+  </ul>
+  <p>Exclusions (may be excluded from regular rate per 29 CFR &sect; 778.200&ndash;.224):</p>
+  <ul>
+    <li>Truly discretionary bonuses (the employer retains discretion over fact and amount, and the bonus is not announced in advance)</li>
+    <li>Gifts and special-occasion payments not measured by hours or performance</li>
+    <li>Payments for occasional periods when no work is performed (vacation, holiday, illness)</li>
+    <li>Reimbursements for genuine business expenses</li>
+    <li>Premium pay for Saturday, Sunday, or holiday work (under specific conditions)</li>
+    <li>Stock options (with limits)</li>
+  </ul>
+  <p>Note: the difference between a "discretionary" and "non-discretionary" bonus is one of the most-litigated areas of FLSA practice. Calling a bonus "discretionary" in the offer letter does not make it discretionary if the actual practice is to pay it consistently. The substance controls.</p>
 
-  <h2>Step 3: Apply state rules if applicable</h2>
-  <p>In California, Alaska, Nevada, or Colorado, daily overtime may yield more than the federal calculation. Calculate both and use the higher result.</p>
+  <h2>Step 3: Calculate federal overtime pay</h2>
+  <p>Federal overtime is time-and-a-half for hours over 40 in a single workweek:</p>
+  <p><code>Federal overtime premium = Hours over 40 &times; Regular rate &times; 0.5</code></p>
+  <p>(The 0.5 reflects the premium on top of straight-time pay already accounted for. If you compute total overtime hourly compensation, it's Hours over 40 &times; Regular rate &times; 1.5.)</p>
+  <p>Continuing our example: 10 overtime hours &times; $22 &times; 0.5 = $110 in additional overtime premium beyond the straight-time pay already counted. Or equivalently: 10 overtime hours at $33/hour (the time-and-a-half rate) = $330, of which $220 is the straight-time component and $110 is the premium.</p>
+  <p><strong>Workweek definition.</strong> The FLSA workweek is a fixed seven-day period (168 hours) that does not have to align with the calendar week. An employer can define the workweek as starting Monday at 12:01 AM or Thursday at 5 PM &mdash; whichever the employer chooses, in writing, and applies consistently. Workweeks cannot be averaged across two-week or longer periods to dodge overtime, with very narrow exceptions.</p>
 
-  <h2>Step 4: Check for double-time triggers</h2>
-  <p>California requires double-time after 12 hours in a day, or after 8 hours on the 7th consecutive day. A few union contracts and industry-specific rules also include double-time.</p>
+  <h2>Step 4: Apply state rules if applicable</h2>
+  <p>In California, Alaska, Nevada, or Colorado, daily overtime rules may yield more than the federal weekly calculation. The general principle: calculate both and use the higher result. Federal law sets a floor, not a ceiling.</p>
+  <p><strong>California example.</strong> 12 hours Monday, 0 hours Tuesday, 12 hours Wednesday, 0 hours Thursday, 12 hours Friday. Total workweek = 36 hours, so no federal weekly overtime. But under California daily overtime: 4 hours of OT on Monday (8&ndash;12), 4 hours OT on Wednesday, 4 hours OT on Friday = 12 hours of daily overtime at 1.5x.</p>
+  <p>See our guide on <a href="/guides/state-overtime-laws-explained">State overtime laws explained</a> for full state-by-state coverage.</p>
+
+  <h2>Step 5: Check for double-time triggers</h2>
+  <p>California requires double-time:</p>
+  <ul>
+    <li>After 12 hours in a workday</li>
+    <li>After 8 hours on the 7th consecutive day of work in a workweek</li>
+  </ul>
+  <p>Some union contracts and industry-specific rules in other states also include double-time provisions. Always check your CBA if you're a union member.</p>
+
+  <h2>Step 6: Confirm you're not in an exempt classification</h2>
+  <p>The big four white-collar exemptions (29 CFR Part 541): executive, administrative, professional, and outside sales. Each requires (a) being paid on a salary basis at or above the federal threshold ($684/week as of 2024, though regulatory updates may apply), and (b) satisfying a duties test specific to the category. A worker fails the test if their primary duty is non-exempt work, regardless of title.</p>
+  <p>Other narrow exemptions: highly compensated employees (different test), computer professionals (with specific duties), retail commission-paid employees in certain conditions, and many industry-specific exemptions for agriculture, transportation, and seasonal recreational establishments.</p>
+  <p>If you're classified as exempt but think you might not actually meet the duties test &mdash; for example, you have a "supervisor" title but spend most of your time doing the same hands-on work as the people you supervise &mdash; you may be misclassified and entitled to overtime.</p>
 
   <h2>Multiple jobs with the same employer</h2>
-  <p>If you work two roles for the same employer, hours combine for overtime purposes. The weighted-average regular rate is used unless an explicit dual-rate agreement exists.</p>
+  <p>If you work two roles for the same employer, hours combine for overtime purposes. The weighted-average regular rate is used unless an explicit dual-rate agreement is in place that satisfies 29 CFR &sect; 778.115. Most workers don't have such agreements, so the weighted-average rule applies by default.</p>
+  <p><strong>Worked example.</strong> 30 hours as a server at $12/hour, 20 hours as a cook at $18/hour for the same employer, all in one workweek. Straight-time = (30 &times; $12) + (20 &times; $18) = $360 + $360 = $720. Total hours = 50. Regular rate = $720 / 50 = $14.40. Overtime premium on 10 OT hours = 10 &times; $14.40 &times; 0.5 = $72.</p>
 
   <h2>Tipped employees</h2>
-  <p>Special rules apply. Overtime is calculated on the FULL minimum wage, not the reduced cash wage paid to tipped employees. This is one of the most commonly miscalculated overtime scenarios.</p>
+  <p>Special rules apply, and they're frequently miscalculated. Overtime is calculated on the FULL minimum wage (or the regular rate if higher), NOT the reduced cash wage paid to tipped employees. An employer who takes a tip credit toward minimum wage cannot use the cash wage as the base for overtime computation.</p>
+  <p>The federal formula: overtime premium = 0.5 &times; (minimum wage). Then the employer can still take the tip credit against the resulting hourly rate (up to the cash-wage-tip-credit balance), but the regular rate cannot drop below the full federal or state minimum wage for overtime purposes.</p>
 
-  <p>For state-specific rules see <a href="/guides/state-overtime-laws-explained">State overtime laws explained</a>.</p>
+  <h2>Fluctuating workweek method</h2>
+  <p>The fluctuating workweek (FWW) method (29 CFR &sect; 778.114) allows certain salaried non-exempt employees to receive overtime at 0.5 times the regular rate (rather than 1.5) because their fixed salary is deemed to cover the straight-time component of all hours worked. Requirements include: a fixed weekly salary regardless of hours, hours that genuinely fluctuate above and below 40, a clear mutual understanding, and the regular rate (salary / actual hours) never dropping below minimum wage.</p>
+  <p>FWW is increasingly disfavored by enforcement and frequently litigated. Don't assume your employer is correctly applying it; non-discretionary bonuses and other supplemental payments break FWW in some federal circuits.</p>
+
+  <h2>Cheat-sheet: which workers get overtime and how it's computed</h2>
+  <table>
+    <thead>
+      <tr><th>Worker type</th><th>OT entitlement</th><th>Regular rate base</th><th>Common pitfall</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Hourly non-exempt</td><td>Yes, &gt;40/week (federal) plus state daily rules</td><td>Hourly wage + bonuses + commissions</td><td>Forgetting to include bonuses</td></tr>
+      <tr><td>Salaried non-exempt</td><td>Yes &mdash; salary doesn't equal exempt</td><td>Salary / hours actually worked</td><td>Treating salary as exempting OT</td></tr>
+      <tr><td>White-collar exempt</td><td>No (if both salary and duties tests met)</td><td>N/A</td><td>Misclassification by title only</td></tr>
+      <tr><td>Tipped</td><td>Yes</td><td>Full minimum wage, not cash wage</td><td>Using cash wage for OT base</td></tr>
+      <tr><td>Multiple jobs, same employer</td><td>Yes, hours combine</td><td>Weighted average across roles</td><td>Computing each job separately</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Common errors we see workers make</h2>
+  <ul>
+    <li><strong>Assuming "salaried" means "exempt."</strong> It doesn't. The duties test is the real gatekeeper.</li>
+    <li><strong>Forgetting bonuses in the regular rate.</strong> A $200 quarterly attendance bonus changes the regular rate, and therefore the overtime owed, retroactively across that quarter.</li>
+    <li><strong>Treating off-the-clock work as not compensable.</strong> If your employer knew or should have known you were working, it counts &mdash; pre-shift prep, post-shift cleanup, off-hours emails, on-call time meeting specific tests.</li>
+    <li><strong>Not understanding the seven-consecutive-day rule in California.</strong> Working all seven days of the workweek triggers premium pay even when daily and weekly thresholds wouldn't.</li>
+    <li><strong>Trusting paystub math without verification.</strong> Paystubs are an output, not a guarantee. Run the math yourself if anything looks off.</li>
+  </ul>
+
+  <h2>Where to go from here</h2>
+  <p>For state-specific overtime rules, see <a href="/guides/state-overtime-laws-explained">State overtime laws explained</a>. If you've already discovered you're underpaid, see <a href="/guides/what-to-do-if-your-employer-wont-pay-overtime">What to do if your employer won't pay overtime</a>. For the most frequent misconceptions we see, see <a href="/guides/common-overtime-misconceptions">Common overtime misconceptions</a>. For the doctrinal background &mdash; the formulas and citations behind each step &mdash; see our <a href="/methodology">Methodology</a> page.</p>
 </BaseLayout>
