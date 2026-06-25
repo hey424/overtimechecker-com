@@ -1,30 +1,34 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const title = 'Methodology — How We Calculate Overtime | overtimechecker.com';
-const description = 'The federal FLSA rules and state-specific overtime formulas our calculator uses, with citations.';
+const description = 'The federal FLSA rules and state-specific overtime formulas our calculator uses, with citations and a worked example.';
 ---
 <BaseLayout title={title} description={description}>
   <h1>Methodology</h1>
-  <p>Our calculator follows the Fair Labor Standards Act (FLSA) of 1938 (29 USC &sect; 207) and state-specific overtime laws where applicable.</p>
+  <p><em>Reviewed by Riley Mendez (RM), Editor-in-Chief, and Sam Calloway (SC), Contributing Writer &middot; Updated June 2026</em></p>
+  <p>OvertimeChecker estimates the overtime pay you are owed for hours worked beyond the legal threshold in your workweek. The calculation looks simple &mdash; "time and a half" &mdash; but the number that actually matters is the <em>regular rate</em>, and that is where most underpayment happens. Our calculator follows the Fair Labor Standards Act (FLSA) of 1938 (29 USC &sect; 207) and applies state-specific overtime laws where they are more protective than the federal floor. This page explains the formula, shows how the regular rate is built from more than just your hourly wage, and walks through a worked example so you can see exactly where an employer's math might fall short. Methodology matters here because overtime is computed on the regular rate, not the base wage &mdash; and leaving a bonus or shift differential out of that rate is one of the most common (and most expensive) wage errors.</p>
 
   <h2>Federal FLSA formula</h2>
   <p><code>Overtime pay = (Hours worked over 40 in a workweek) &times; (Regular rate &times; 1.5)</code></p>
-  <p>Authority: 29 USC &sect; 207(a)(1).</p>
+  <p>Authority: 29 USC &sect; 207(a)(1). Under federal law, overtime is owed for hours over 40 in a single workweek &mdash; not per day, and not per pay period. Two 50-hour weeks in a biweekly paycheck are two separate overtime weeks, each owing 10 hours of premium pay; they cannot be averaged against a lighter week.</p>
 
   <h2>Regular rate calculation</h2>
-  <p>The "regular rate" includes hourly wage plus most non-discretionary payments (commissions, non-discretionary bonuses, shift differentials). It excludes overtime premiums, discretionary bonuses, and gifts.</p>
+  <p>The "regular rate" includes hourly wage plus most non-discretionary payments (commissions, non-discretionary bonuses, shift differentials, and the like). It excludes overtime premiums already paid, truly discretionary bonuses, gifts, and certain benefit contributions.</p>
   <p>For hourly workers without supplemental pay: regular rate = hourly wage.</p>
-  <p>For workers with commissions or bonuses: regular rate = total weekly straight-time pay / total hours worked.</p>
+  <p>For workers with commissions or bonuses: regular rate = total weekly straight-time pay &divide; total hours worked. The overtime premium is then half that regular rate for each overtime hour (because the straight-time portion of those hours is already counted in total pay).</p>
+
+  <h3>Worked example</h3>
+  <p>Suppose you earn $20/hour, worked 45 hours this week, and received a $100 non-discretionary production bonus. A common employer mistake is to pay overtime as 5 &times; ($20 &times; 1.5) = $150 and ignore the bonus. The correct method folds the bonus into the regular rate: straight-time pay = (45 &times; $20) + $100 = $1,000, so the regular rate = $1,000 &divide; 45 = $22.22/hour. The overtime premium owed is the extra half-time on those 5 hours: 5 &times; ($22.22 &times; 0.5) = $55.55 <em>on top of</em> the straight-time already in the $1,000. Total owed for the week is $1,000 + $55.55 = <strong>$1,055.55</strong>. The $100 bonus raised your overtime premium by about $5.55 &mdash; small here, but it compounds quickly across larger bonuses and longer periods, and it is exactly the figure employers most often omit.</p>
 
   <h2>State variations</h2>
-  <p>Where state law requires more than the federal minimum (California, Alaska, Nevada, Colorado), our calculator applies the state-specific premium when you select that state. See <a href="/state-laws">State Laws</a> for details.</p>
+  <p>Where state law requires more than the federal minimum, our calculator applies the state-specific premium when you select that state. California is the most significant: it requires daily overtime after 8 hours, double time after 12 hours in a day, and overtime on the seventh consecutive day of work &mdash; none of which exist under federal law. Alaska and Nevada also impose daily overtime after 8 hours (Nevada only for employees below a wage threshold), and Colorado requires overtime after 12 hours in a day or 12 consecutive hours in addition to the 40-hour week. In these states a worker can be owed overtime even in a week under 40 total hours. See <a href="/state-laws/">State Laws</a> for details.</p>
 
   <h2>Workweek definition</h2>
-  <p>A "workweek" is a fixed, recurring period of 168 hours (7 consecutive 24-hour periods). It does NOT have to be Sunday-Saturday. Your employer sets the workweek; once set, it generally can't change to avoid overtime.</p>
+  <p>A "workweek" is a fixed, recurring period of 168 hours (7 consecutive 24-hour periods). It does NOT have to be Sunday&ndash;Saturday. Your employer sets the workweek; once set, it generally cannot be changed to dodge overtime. The workweek boundary is what determines which hours count toward the 40-hour threshold, so a shift that straddles two workweeks is split between them.</p>
 
   <h2>Exemptions we don't model</h2>
-  <p>The calculator assumes you're non-exempt. If you're a bona fide executive, administrative, professional, outside sales, or computer-professional employee (meeting both the salary and duties tests), federal FLSA overtime doesn't apply &mdash; though some states have narrower exemptions.</p>
+  <p>The calculator assumes you are non-exempt. If you are a bona fide executive, administrative, professional, outside sales, or computer-professional employee &mdash; meeting <em>both</em> the salary-basis test and the duties test &mdash; federal FLSA overtime does not apply, though some states use narrower exemptions that may still entitle you to overtime. Job title alone never determines exemption; the actual duties and pay structure control.</p>
 
   <h2>What we don't model</h2>
-  <p>Tip credits, piece-rate calculations, fluctuating workweek method, alternative workweek schedules (some California industries), and union-contracted overtime. These require case-by-case calculation.</p>
+  <p>Several pay structures require case-by-case calculation and are out of scope here: tip credits and tipped-employee overtime; piece-rate and commission-only arrangements with complex regular-rate math; the fluctuating workweek method (which pays a 0.5&times; premium on a salaried non-exempt worker's varying hours); alternative workweek schedules adopted in certain California industries; meal- and rest-break premiums that some states treat as wages; "off-the-clock" work and unpaid pre-shift or post-shift time; and union-contracted overtime that exceeds statutory minimums. Misclassification disputes &mdash; whether you are truly exempt or an independent contractor at all &mdash; also fall outside an automated estimate and are best reviewed with a wage-and-hour attorney or your state labor agency.</p>
 </BaseLayout>
