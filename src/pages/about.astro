@@ -1,21 +1,30 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const title = 'About overtimechecker.com | Overtime Pay Calculator';
-const description = 'About the team behind overtimechecker.com. Free wage-and-hour calculators and worker-rights guides reviewed by the editorial team at The Click Lab.';
+const description = 'About the team behind overtimechecker.com — how we calculate overtime pay under the FLSA and state law, our editorial standards, and how the site is funded.';
 ---
 <BaseLayout title={title} description={description}>
   <h1>About overtimechecker.com</h1>
-  <p>overtimechecker.com is a free wage-and-hour resource maintained by The Click Lab. Our calculator and guides help workers understand what they're owed under federal and state overtime laws.</p>
+  <p>overtimechecker.com is a free wage-and-hour resource maintained by The Click Lab. Our calculator and guides help workers figure out what they're actually owed under the federal Fair Labor Standards Act and their state's overtime rules &mdash; and, just as often, help them spot when an employer's own math has quietly left money out. The Site is built for people looking at a paycheck that doesn't add up and wanting a plain-English starting point before they raise it with payroll or file a claim.</p>
 
   <h2>What we do</h2>
-  <p>We translate FLSA and state labor law into plain-English calculators and guides. Every page is reviewed by our <a href="/editorial">editorial team</a>, with citations to the Department of Labor and state agency sources.</p>
+  <p>We translate the FLSA, its implementing regulations, and state-specific overtime statutes into a plain-English calculator and guides. Every page is reviewed by our <a href="/editorial/">editorial team</a> with citations to Department of Labor regulations, Wage and Hour Division guidance, and state agency sources. The calculator computes federal time-and-a-half on hours over 40 in a workweek, builds the "regular rate" correctly when bonuses or shift differentials are involved (a step many employers skip), and layers in state-specific rules &mdash; like California's daily overtime and double-time thresholds &mdash; where they're stricter than the federal floor.</p>
+
+  <h2>Who this calculator is for</h2>
+  <p>Most visitors fall into one of a few groups: hourly workers checking whether a specific week's paycheck matches what the law actually requires; salaried employees trying to figure out whether being paid a salary really makes them exempt from overtime (it often doesn't); workers who got a bonus or commission and suspect their overtime rate should have gone up because of it; and small-business owners or managers trying to get payroll classifications right before a mistake becomes a wage claim. We built the Site around these use cases, which is why every guide leads with a plain-English answer before it gets into regulatory detail.</p>
+
+  <h2>How the estimate is built</h2>
+  <p>The full mechanics &mdash; the federal formula, how the regular rate is built from more than just your hourly wage, the state-by-state variations, and a worked example showing how a single bonus changes the number &mdash; are documented on our <a href="/methodology/">methodology page</a>. At a high level: the calculator multiplies hours over 40 in a workweek by 1.5 times your regular rate, where the regular rate folds in non-discretionary bonuses and shift differentials rather than just your base hourly wage, then applies your state's own thresholds &mdash; daily overtime, double-time, or a seventh-consecutive-day rule &mdash; if your state requires more than the federal minimum.</p>
 
   <h2>What we don't do</h2>
-  <p>We don't provide legal advice. Our content is general and informational. For specific wage disputes, consult a wage-and-hour attorney or your state labor agency.</p>
+  <p>We don't provide legal advice, and nothing on this Site creates an attorney-client relationship. Whether you're actually owed unpaid overtime depends on your exemption status, your employer's exact pay structure, your state's specific rules, and records neither you nor we may have in front of us &mdash; details no calculator can fully account for. We also don't evaluate individual pay disputes, review specific paystubs, file wage claims on anyone's behalf, or recommend particular attorneys. For your specific situation, consult a wage-and-hour attorney or your state labor agency; see our <a href="/contact/">contact page</a> for pointers on finding the right one.</p>
+
+  <h2>Editorial standards</h2>
+  <p>Every guide and reference page is written from primary sources &mdash; the FLSA and its implementing regulations, Wage and Hour Division opinion letters and fact sheets, and state labor codes and agency guidance &mdash; and reviewed before publication. We don't publish thin content: each page is meant to answer a specific question a worker or small-business owner would actually ask, with enough detail and enough worked examples to be genuinely useful. Our full editorial workflow, contributor backgrounds, and sourcing policy are on the <a href="/editorial/">editorial team page</a>.</p>
 
   <h2>How we make money</h2>
-  <p>Display advertising via Google AdSense. We don't sell reader data or accept paid placements. See our <a href="/privacy">privacy policy</a>.</p>
+  <p>Display advertising via Google AdSense. We don't sell reader data or accept paid placements, and no law firm or payroll-tech company pays for placement or a favorable mention anywhere on the Site. See our <a href="/privacy/">privacy policy</a> for details on data handling.</p>
 
   <h2>Contact</h2>
-  <p>Questions or corrections? See our <a href="/contact">contact page</a>.</p>
+  <p>Questions, corrections, or feedback: see our <a href="/contact/">contact page</a>.</p>
 </BaseLayout>
